@@ -1,0 +1,112 @@
+
+body{
+  
+   overflow-y:hidden;
+
+  
+  background: -webkit-linear-gradient(#232526,#414345);
+ background-repeat: no-repeat;
+ background-size: cover;
+height: 100vh;
+
+  
+}
+
+
+.box3d {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  margin-top: 225px;
+}
+
+.box3d div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  opacity: 0.5;
+  transform-origin: 50% 50% -100px;
+}
+
+.p1 {
+  background: -webkit-linear-gradient(#1e9600, #fff200, #ff0000);
+  transform: perspective(600px) rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+  animation: spin1 10s infinite linear;
+}
+
+.p2 {
+  background: -webkit-linear-gradient(#200122, #6f0000);
+  animation: spin2 10s infinite linear;
+}
+
+.p3 {
+  background: -webkit-linear-gradient( #ff00cc, #333399); /* Chrome 10-25, Safari 5.1-6 */
+  animation: spin3 10s infinite linear;
+}
+
+.p4 {
+  background: -webkit-linear-gradient( #5433ff, #20bdff, #a5fecb); /* Chrome 10-25, Safari 5.1-6 */
+  animation: spin4 10s infinite linear;
+}
+
+.p5 {
+  background: -webkit-linear-gradient( #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+  animation: spin5 10s infinite linear;
+}
+
+.p6 {
+  background: -webkit-linear-gradient( #aaffa9, #11ffbd); /* Chrome 10-25, Safari 5.1-6 */
+  animation: spin6 10s infinite linear;
+}
+
+/* for Safari and Chrome */
+/* for IE10 and Firefox */
+@keyframes spin1 {
+  to {
+    transform: perspective(600px) rotateX(360deg) rotateY(450deg) rotateZ(0deg);
+  }
+}
+@keyframes spin2 {
+  0% {
+    transform: perspective(600px) rotateX(0deg) rotateY(270deg) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateX(360deg) rotateY(630deg) rotateZ(0deg);
+  }
+}
+@keyframes spin3 {
+  0% {
+    transform: perspective(600px) rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateX(450deg) rotateY(0deg) rotateZ(-360deg);
+  }
+}
+@keyframes spin4 {
+  0% {
+    transform: perspective(600px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateX(270deg) rotateY(0deg) rotateZ(360deg);
+  }
+}
+@keyframes spin5 {
+  0% {
+    transform: perspective(600px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+  }
+}
+@keyframes spin6 {
+  0% {
+    transform: perspective(600px) rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateX(360deg) rotateY(540deg) rotateZ(0deg);
+  }
+}
